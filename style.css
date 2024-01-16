@@ -23,6 +23,7 @@ body{
     padding: 15px 25px;
     color: #FFF;
     font-weight: 800;
+    cursor: pointer;
 }
 h1{
     font-size: 4rem;
@@ -279,6 +280,56 @@ nav i{
 .card p{
     margin-bottom: 12px;
 }
+
+.neswletter{
+    display: flex;
+    /* border: 3px dashed gainsboro; */
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.subscribe{
+    border-radius: 16px;
+    border: 1px solid #f2dbcf;
+}
+.subscribe h2,
+.subscribe p{
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.subscribe-content{
+    padding: 10px 30px;
+    /* border: 1px solid gainsboro; */
+}
+.subscribe input{
+    width: 90%;
+    height: 50px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    padding: 10px 20px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    border: none;
+
+}
+.subscribe-btn{
+    margin-bottom: 30px;
+    width: 90%;
+    height: 50px;
+}
+.save-btn{
+    position: relative;
+    top: -143px;
+    right: -163px;
+    transform: rotate(-30deg);
+}
+.save-travell img{
+    margin-top: 80px;
+    height: 380px;
+}
+
+
+
 
 
 /* responsive media query */
