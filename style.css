@@ -340,4 +340,16 @@ nav i{
         margin: 0 auto;
         padding: 10px;
     }
+    .card-rows{
+        /* border: 2px dashed green; */
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    .card{
+        /* border: 1px solid #131318; */
+        width: 100%;
+    }
+
 }
