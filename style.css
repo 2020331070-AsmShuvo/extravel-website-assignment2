@@ -21,6 +21,8 @@ body{
     border: none;
     outline: none;
     padding: 15px 25px;
+    color: #FFF;
+    font-weight: 800;
 }
 h1{
     font-size: 4rem;
@@ -32,7 +34,6 @@ h2{
     font-weight: 800;
 }
 h3{
-    color: #FFF;
     font-family: Mulish;
     font-size: 1.75Rem;
     font-weight: 800;
@@ -115,12 +116,175 @@ nav i{
     margin-left: 8px;
 }
 
+/* popolar tour related styles */
+.popular-tour{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.popular-tour div{
+    padding: 1rem;
+    width: 45%;
+    /* border: 1px solid silver; */
+}
+.popular-tour ul{
+    margin-left: 25px;
+}
+.popular-tour h2, .popular-tour p, .popular-tour ul, .popular-tour button{
+    margin-bottom: 20px;
+}
+.popular-tour ul li{
+    margin-bottom: 10px;
+}
+.hill-image img{
+    max-height: 500px;
+    max-width: 500px;
+}
+
+/* your destination related styles */
+.destination{
+    margin-top: 50px;
+}
+.destination>div{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.destination div .img-container{
+    /* width: 573px;
+    height: 300px;
+    flex-shrink: 0; */
+    /* border: 1px dashed green; */
+}
+.img-container-1{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 5.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 573px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.img-container-2{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 8.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 573px;
+    height: 300px;
+    flex-shrink: 0;
+    
+}
+.img-container-3{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 6.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 374px;
+    height: 286px;
+    flex-shrink: 0;
+}
+.img-container-4{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 7.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 474px;
+    height: 286px;
+    flex-shrink: 0;
+}
+.img-container-5{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 9.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 274px;
+    height: 286px;
+    flex-shrink: 0;
+}
+.img-container-6{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 11.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 473px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.img-container-7{
+    background-image:linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Rectangle\ 10.png');
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 673px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+
+/* destnations */
+.destination{
+    margin-top: 50px;
+}
+.destination div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.destination div div h2{
+    color: #FFF;
+}
+.destination>h2, .destination>p{
+    text-align: center;
+    margin: 30px 200px;
+}
+/* Why choose us realted styles */
+
+.why-choose-us{
+    /* border: 2px solid rebeccapurple; */
+    /* display: none; */
+    text-align: center;
+    margin: 50px auto;
+}
+.why-choose-us>h2, .why-choose-us>p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-containter{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+    min-height: 400px;
+}
+.card-rows{
+    display: flex;
+    /* border: 2px dashed salmon; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card{
+    /* border: 2px dashed green; */
+    flex-shrink: 0;
+    border-radius: 16px;
+    /* border: 1px solid rgba(41, 206, 246, 0.20); */
+    background: rgba(41, 206, 246, 0.05);
+    width: 40%;
+    height: 100%;
+    text-align: start;
+    padding: 35px;
+}
+.card img{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+.card img, 
+.card h3, 
+.card p{
+    margin-bottom: 12px;
+}
 
 
 /* responsive media query */
 @media screen and (max-width: 600px) {
     body{
-        margin: 0;
+        margin: 0 auto; width: 400px;
         padding: 0.8rem;
     }
     nav{
@@ -128,12 +292,52 @@ nav i{
     }
     .banner{
         /* border: 10px dashed green; */
-        min-width: 195px;
-        width: 420px;
-        padding: 10px;
+        min-width: 250px;
+        width: 400px;
+        /* width: 100%; */
+    }
+    .banner h1{
+        font-size: large;
     }
     .banner-items{
         flex-direction: column;
         gap: 1rem;
+    }
+    
+    .popular-tour{
+        /* display: none; */
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .popular-tour div{
+        padding: 1rem;
+        /* border: 1px solid silver; */
+        width: 100%;
+    }
+    .hill-image img{
+        min-width: 200px;
+        width: 400px;
+        margin-left: -20px;
+    }
+    .popular-tour ul{
+        margin-left:2rem;
+    }
+
+    .destination>div{
+        flex-direction: column;
+    }
+    .tourimg{
+        width: 100%;
+        background-size: cover;
+    }
+    .destination>h2, .destination>p{
+        text-align: center;
+        margin: 30px auto;
+    }
+    .why-choose-us{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
     }
 }
