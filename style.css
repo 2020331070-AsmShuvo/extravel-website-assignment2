@@ -403,4 +403,25 @@ nav i{
         width: 100%;
     }
 
+    .neswletter{
+        border: 2px solid firebrick;
+        flex-direction: column;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .save-travell{
+        width: 100%;
+    }
+    .save-travell img{
+        width: 100%;
+        
+    }
+    .save-btn{
+        position: relative;
+        top: -143px;
+        right: -50px;
+        transform: rotate(-30deg);
+    }
+
 }
