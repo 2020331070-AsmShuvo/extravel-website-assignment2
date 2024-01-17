@@ -491,6 +491,8 @@ hr {
 }
 .disc-card-container-1{
     background-image: url('Images/Group\ 40.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .disc-card-container-2{
     background-image: url('Images/Group\ 39.png');
