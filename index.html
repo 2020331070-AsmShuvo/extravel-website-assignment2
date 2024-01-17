@@ -9,29 +9,33 @@
 <body>
     <header>
         <nav>
-            <div>
-                <div class="logo">
-                    <img src="icons/Group 40071 (2).png" alt="">
-                    <div class="logotext">
-                        <em>Ex</em><span>travel</span>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-btn">
-                <ul>
-                    <li class="home-btn"><a href="#"><strong>Home</strong></a></li>
-                    <li><a href="#">Packages</a></li>
+            <ul class="nav-bar">
+                <li class="logo">
+                    <a href="#"> <img src="icons/Group 40071 (2).png" alt="">
+                            <div><em>Ex</em> <span>travel</span></div>
+                    </a>
+                </li>
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a  class="home-btn" href="#">Home</a></li>
+                    <li><a href="#">packages</a></li>
                     <li><a href="#">Testimonials</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+                    <label for="check" class="close-menu">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </span>
+                <label for="check" class="open-menu">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </ul>
         </nav>
         <!-- *************************B A N N E R ************************* -->
 
         <section class="banner">
             <h1>Explore Your Travel</h1>
-            <p>Embark on a journey of discovery with our curated travel experiences. Explore new horizons and create memories that last a lifetime.</p>
+            <p >Embark on a journey of discovery with our curated travel experiences. Explore new horizons and create memories that last a lifetime.</p>
             <div class="banner-items">
                 <input type="text" name="text" id="" placeholder="Where go">
                 <select class="options" name="options">

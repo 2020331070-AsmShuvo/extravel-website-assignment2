@@ -50,45 +50,91 @@ h4{
     font-weight: 400;
 }
 p{
-    color: #5A5A5D;
+    color: #363637d3;
     font-size: 1rem;
 }
 
 /* Navbar related styles */
 nav{
+    margin-bottom: 50px;
+}
+.nav-bar{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    /* border: 1px dashed green; */
-    margin-bottom: 50px;
+    list-style: none;
+    position: relative;
+    background-color: white;
+    padding: 12px 20px;
 }
-nav ul{
+
+
+
+.menu{
     display: flex;
-    justify-content: space-between;
 }
+.menu li{
+    padding-left: 30px;
+}
+.menu li a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(70, 64, 64);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    transition: transform 0.5s;
+    font-weight: 600;
+}
+.menu li a:hover{
+    transform: scale(1.1);
+    color: gray;
+}
+.home-btn {
+    color: var(--primary-color);
+}
+.open-menu,
+.close-menu{
+    position: absolute;
+    color: #424247;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu{
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu{
+    top:20px;
+    right: 20px;
+}
+#check{
+    display: none;
+}
+
 nav ul li a{
     text-decoration: none;
     margin-right: 2.5rem;
     font-weight: 400px;
     color: var(--secondary-color);
 }
-nav ul li{
-    list-style: none;
-}
-.home-btn a{
-    color: var(--primary-color);
-}
+
 span{
     color: var(--primary-color);
 }
-.logotext{
-    font-size: 32px;
-    display: inline;
-}
+
 .logo img{
     width: 32px;
 }
+.logo div{
+    display: inline;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 
 /* Banner realted styles */
 .banner{
@@ -130,6 +176,9 @@ span{
     padding: 10px;
     border: none;
     margin-left: 8px;
+}
+.banner>p{
+    color: #FFF;
 }
 /*  main related styles */
 
@@ -408,7 +457,7 @@ footer{
 }
 .icons i{
     margin-left: 20px;
-    transition: transform .5s;
+    transition: transform 1s;
 }
 .icons i:hover{
     transform: scale(1.2);
@@ -486,9 +535,36 @@ hr {
         /* width: 400px; */
         padding: .8rem 0 .8rem 2.2rem;
     }
-    nav{
+    .menu{
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #f393e7d1;
+        color: rgb(0, 0, 0);
+        font-size: 1.5rem;
+        border: 1px solid wheat;
+
     }
+    .menu li{
+        margin-top: 40px;
+    }
+    .menu li a{
+        padding: 10px;
+    }
+    .open-menu,
+    .close-menu{
+        display: block;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
     .banner{
         /* border: 10px dashed green; */
         min-width: 250px;
